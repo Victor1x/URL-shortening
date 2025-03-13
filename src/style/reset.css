@@ -1,0 +1,38 @@
+/* Reset básico para remover estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remover estilos padrões de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remover sublinhado de links e configurar cor padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Garantir que imagens não ultrapassem seus containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Melhorar a aparência de fontes em navegadores modernos */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Padronização de botões */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit; 
+  /* A propriedade font-family: inherit; no botão (<button>) herda a fonte do elemento pai. */
+}

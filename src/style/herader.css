@@ -1,0 +1,46 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* background-color: #F7F8FD; */
+}
+.container_main_center {
+  width: 90%;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.navbar__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Menu Mobile inicio */
+.mobile__menu {
+  display: none;
+  flex-direction: column;
+  /* gap: 5px; */
+  cursor: pointer;
+}
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: var(--red); /* Cor vermelha  para teste*/
+  margin: 2px 0;
+  border-radius: 2px;
+}
+/* Menu Mobile fim */
+
+/* Logo */
+.logo__container {
+  min-width: 125px;
+  min-height: 35px;
+}
+
