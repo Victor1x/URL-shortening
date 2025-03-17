@@ -30,6 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  font-size: 18px;
   /* overflow: hidden; */
   /* border: 2px solid red; */
 }
@@ -40,6 +41,7 @@ button {
   background: none;
   cursor: pointer;
   font-family: inherit;
+  font-size: inherit;
   /* A propriedade font-family: inherit; no botão (<button>) herda a fonte do elemento pai. */
 }
 .container_main_center {
