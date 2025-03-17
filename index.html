@@ -12,13 +12,6 @@
       <div class="container_main_center">
         <nav>
           <div class="navbar__container">
-            <!-- Menu Mobile -->
-            <div class="mobile__menu" aria-label="Abrir menu de navegação">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-
             <!-- Logo -->
             <div class="logo__container hover_link">
               <a href="#" aria-label="Página inicial">
@@ -28,32 +21,28 @@
 
             <!-- Lista de navegação -->
             <ul class="nav__list" role="menu">
-              <li class="nav__item" role="menuitem"><a href="#">Features</a></li>
+              <li class="nav__item" role="menuitem">
+                <a href="#">Features</a>
+              </li>
               <li class="nav__item" role="menuitem"><a href="#">Pricing</a></li>
-              <li class="nav__item" role="menuitem"><a href="#">Resources</a></li>
+              <li class="nav__item" role="menuitem">
+                <a href="#">Resources</a>
+              </li>
             </ul>
           </div>
 
           <!-- login e cadastro -->
-          <div class="navbar__cart__profile__container">
-            <div class="navbar__cart">
-              <a
-                href="#"
-                class="link__cart hover_link"
-                aria-label="Abrir carrinho"
-              >
-                <img
-                  src="assets/images/icon-cart.svg"
-                  alt="Carrinho de compras"
-                />
-                <span class="cart__quantity" aria-live="polite">0</span>
-              </a>
+          <div class="navbar__login__cadastro__container">
+            <div class="login__cadastro">
+              <a href="#" class="link_login">Login</a>
+
+              <a href="#" class="link_cadastro">Sign Up</a>
             </div>
-            <div class="navbar__profile">
-              <img
-                src="assets/images/image-avatar.png"
-                alt="Perfil do usuário"
-              />
+            <!-- Menu Mobile -->
+            <div class="mobile__menu" aria-label="Abrir menu de navegação">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
             </div>
           </div>
         </nav>
@@ -62,7 +51,49 @@
         <div id="shadow" aria-hidden="true"></div>
       </div>
     </header>
-    <!-- Features Pricing Resources Login Sign Up More than just shorter links Build
+    <main>
+      <div class="container_main_center">
+        <section class="text__img__container">
+          <div class="div__title__text__button__container">
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand's recognition and get detailed insights on how
+              your links are performing
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
+          <div class="div__img__container">
+            <img
+              src="src/assets/images/illustration-working.svg"
+              alt="Imagem ilustrativa de um
+            pessoa utilizando um computador"
+            />
+          </div>
+        </section>
+      </div>
+      <section class="input__link__cart__container">
+        <div class="container_main_center">
+          <div class="div_input__link__container">
+            <form class="form__input__btn__container">
+              <div class="div__input__span">
+                <input
+                  type="search"
+                  id="input__url"
+                  placeholder="Shorten a link here..."
+                /> 
+                <span class="span__alert">Please add a link</span>
+              </div>
+
+              <button class="btn__shorten">Shorten It!</button>
+            </form>
+            <ul>
+              <li>tesafdsjkhdkjhsakljhdslhlkjhjksakjlh</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  More than just shorter links Build
     your brand’s recognition and get detailed insights on how your links are
     performing. Get Started -->
 

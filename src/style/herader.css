@@ -1,25 +1,21 @@
 header {
-  width: 100%;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+
   width: 100%;
   z-index: 100;
   /* background-color: #F7F8FD; */
 }
-.container_main_center {
-  width: 90%;
-  margin: auto;
-}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 .navbar__container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 /* Menu Mobile inicio */
@@ -40,7 +36,56 @@ nav {
 
 /* Logo */
 .logo__container {
-  min-width: 125px;
-  min-height: 35px;
+  width: 125px;
+  height: 35px;
+}
+.logo__container > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* fim logo */
+/* Lista de navegação */
+.nav__list {
+  display: flex;
+  gap: 20px;
+}
+.nav__item > a {
+  color: var(--grayish-violet);
+  font-weight: 500;
+}
+.nav__list a:hover {
+  color: var(--very-dark-violet);
 }
 
+/* fim Lista de navegação */
+
+/* login e cadastro */
+.login__cadastro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.link_login {
+  color: var(--grayish-violet);
+  font-weight: 500;
+}
+.link_login:hover {
+  color: var(--very-dark-violet);
+}
+.link_cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--cyan);
+  color: #fff;
+  font-weight: 500;
+}
+.link_cadastro:hover {
+  opacity: 0.6;
+}
