@@ -44,6 +44,14 @@ button {
   font-size: inherit;
   /* A propriedade font-family: inherit; no botão (<button>) herda a fonte do elemento pai. */
 }
+
+.hover_link > a > img {
+  transition: 0.3s ease;
+  filter: invert(0);
+}
+.hover_link > a:hover > img {
+  filter: invert(0.5);
+}
 .container_main_center {
   width: 90%;
   margin: auto;

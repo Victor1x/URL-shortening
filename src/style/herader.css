@@ -36,8 +36,8 @@ nav {
 
 /* Logo */
 .logo__container {
-  width: 125px;
-  height: 35px;
+  min-width: 125px;
+  min-height: 35px;
 }
 .logo__container > a {
   width: 100%;

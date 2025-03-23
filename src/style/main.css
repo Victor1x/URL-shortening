@@ -46,26 +46,29 @@ main {
 }
 
 .div__img__container img {
-  max-width: 750px;
-  position: absolute;
+  /* min-width: 750px; */
+  /* position: absolute;
   top: 10%;
-  right: -20%;
-  transform: translateX(-20%);
+  right: -10%;
+  transform: translateX(-10%); */
   object-fit: contain;
 }
 
+/* ============================================= */
 /* 2 section class input__link__cart__container */
+/* ============================================ */
 
 .input__link__cart__container {
   border: 2px solid red;
   background-color: var(--gray-background-card);
-  padding: 90px 0 100px;
-  margin-bottom: 100px;
+  /* background-color: var(--gray); */
+  padding: 90px 0 0px;
+  /* margin-bottom: 100px; */
   position: relative;
 }
 
 .form__input__btn__container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 90%;
   display: flex;
   align-items: center;
@@ -80,7 +83,7 @@ main {
 }
 .div__input__spam__btn {
   width: 100%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -91,7 +94,7 @@ main {
   justify-content: center;
   gap: 2px;
   width: 80%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 #input__url {
   width: 100%;
@@ -101,7 +104,11 @@ main {
   padding: 10px 20px;
   font-size: 18px;
   outline: none;
+
 }
+/* #input__url:focus {
+  border: 2px solid black;
+} */
 
 #input__url::placeholder {
   color: var(--grayish-violet);
@@ -110,7 +117,7 @@ main {
 .span__alert {
   color: var(--red);
   font-size: 14px;
-  display: block;
+  display: none;
 }
 .alert {
   display: flex;
@@ -145,6 +152,11 @@ main {
 }
 .old__url {
   font-weight: 500;
+  width: 350px; /* Largura fixa ou máxima para que o texto seja cortado */
+  white-space: nowrap; /* Impede que o texto quebre de linha */
+  overflow: hidden; /* Oculta a parte que ultrapassar a largura */
+  text-overflow: ellipsis; /* Adiciona "..." no final do texto */
+  display: inline-block; /* Ou block – o importante é respeitar as definições acima */
 }
 .new_url {
   color: var(--cyan);
@@ -165,19 +177,109 @@ main {
   /* font-size: 18px; */
   transition: 0.3s ease;
 }
+/*===================================*/
+/*======== section dos cards ========*/
+/*===================================*/
 
-.div__text__card__container{
-  padding-top: 150px;
+.div__text__card__container {
+  padding-top: 100px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
 }
-.div__text{
+
+.div__text {
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: center;
   max-width: 500px;
 }
+
+.div__card__container {
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.line__blue {
+  width: 100px;
+  height: 10px;
+  background-color: var(--cyan);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 20px; */
+  padding: 45px 40px 40px;
+  max-width: 450px;
+  background-color: var(--gray-background-card);
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+.div__img {
+  background-color: var(--dark-violet);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: 30px;
+  border: 2px solid red;
+}
+div > img {
+  width: 60%;
+  height: 60%;
+}
+.div__card__brand {
+  align-self: start;
+  margin-bottom: 100px;
+}
+.div__card__detailed {
+  align-self: center;
+}
+.div__card__fully {
+  align-self: end;
+}
+.div__text__card > h3 {
+  color: var(--dark-violet);
+  /* font-size: 22px; */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.div__text__card > p {
+  color: var(--grayish-violet);
+  font-weight: 500;
+  /* font-size: 16px; */
+}
+
+/* ========================================= */
+/* section perto do footer com texto e botão */
+/* ========================================= */
+
+.div__text__btn__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  background-color: var(--dark-violet);
+  background-image: url("../assets/images/bg-boost-desktop.svg");
+  background-size: cover;
+  padding: 40px;
+}
+/* ================================= */
+/*============= footer =============*/
+/* ================================ */
+
 /* input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   background: url("data:image/svg+xml;utf8,\
